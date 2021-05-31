@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  height: var(--header-height);
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 25px 1px rgba(0, 0, 0, 0.75);
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container > .name {
+  font-family: "Bungee", cursive;
+  pointer-events: none;
+}
+
+.container > .info {
+  display: flex;
+  align-items: center;
+  color: var(--light-gray-color);
+  font-size: medium;
+}
+
+.info--icon {
+  width: 1.5rem;
+  fill: var(--light-gray-color);
+}
+
+.info--text {
+  margin: 0 0.8rem;
+  pointer-events: none;
+}
+
+.info--text--highlight {
+  color: white;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 770px) {
+  .info--icon,
+  .info--text {
+    display: none;
+  }
+}

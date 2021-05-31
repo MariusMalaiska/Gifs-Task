@@ -1,0 +1,57 @@
+.gif--wraper {
+  position: relative;
+  flex: auto;
+  min-width: 375px;
+  height: 275px;
+  margin: 0.5rem;
+  box-sizing: border-box;
+  transition-duration: 0.16s;
+}
+
+.gif--wraper:hover {
+  border: 5px solid var(--blue-color);
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image--tip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 10px;
+  left: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  align-items: center;
+  color: white;
+}
+
+.image--tip > .padlock {
+  height: 30px;
+  fill: white;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 770px) {
+  .gif--wraper {
+    min-width: 275px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .image--tip {
+    display: none;
+  }
+
+  .gif--wraper:hover > .image--tip {
+    display: block;
+  }
+}

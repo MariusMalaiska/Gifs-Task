@@ -1,0 +1,33 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero > .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.loading,
+.error {
+  display: flex;
+  /* flex-grow: 12;
+  align-self: stretch; */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* margin-top: 8rem; */
+  width: 100%;
+  font-weight: 600;
+  background-color: tomato;
+}
+
+.loading {
+  color: black;
+  background-color: lightskyblue;
+}
